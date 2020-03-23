@@ -21,7 +21,11 @@
     "typescript": "~3.7.2"
   },
   "dependencies": {
+    "@aws-cdk/aws-cloudfront": "^1.30.0",
+    "@aws-cdk/aws-s3": "^1.30.0",
+    "@aws-cdk/aws-s3-deployment": "^1.30.0",
     "@aws-cdk/core": "1.30.0",
+    "@line/bot-sdk": "^6.8.4",
     "source-map-support": "^0.5.16"
   }
 }
