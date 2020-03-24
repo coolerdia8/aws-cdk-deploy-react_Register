@@ -35,6 +35,12 @@ const App: FC = () => {
   }, [])
   */
 
+ decrement() {
+  this.setState(prevState => ({
+    count: prevState.count - 1,
+  }));
+}
+
   return (
     <div className="App">
       {
@@ -53,7 +59,8 @@ const App: FC = () => {
             <p>送信したいメッセージを入れてね</p>
             <input type="text" className="名前"  placeholder="名前を入力" />
             <Select options={options} placeholder="店名"/>
-            <button id="send" className="btn btn-primary">送信</button>
+            <button id="send" className="btn btn-primary" onClick={() => this.decrement()}>送信</button>
+
         </form>
     </div>
   );
