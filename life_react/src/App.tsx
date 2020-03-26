@@ -58,7 +58,9 @@ const App: FC = () => {
       <form id="send-message">
             <p>送信したいメッセージを入れてね</p>
             <input type="text" className="名前"  placeholder="名前を入力" />
-            <label>店名</label>
+            {//<label>店名</label>
+            }
+            <p>店名</p>
             <Select options={options} placeholder="店名"/>
             <p>生年月日</p>
             <div className="form-row">
@@ -69,6 +71,10 @@ const App: FC = () => {
               <div className="form-group col-4">
                 <label>月</label>
                 <input type="text" className="form-control" id="month" />
+              </div>
+            <div className="form-group col-4">
+                <label>日</label>
+                <input type="text" className="form-control" id="day" />
               </div>
             </div>
             <button id="send" className="btn btn-primary" >送信</button>
